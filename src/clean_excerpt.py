@@ -50,11 +50,11 @@ def main() -> None:
         description="Clean a raw text excerpt for LLM-based extraction."
     )
     parser.add_argument(
-        "--input", default="excerpt.txt",
+        "--input", default="data/excerpt.txt",
         help="Path to the raw input file (default: excerpt.txt)"
     )
     parser.add_argument(
-        "--output", default="excerpt_clean.txt",
+        "--output", default="data/excerpt_clean.txt",
         help="Path to write the cleaned file (default: excerpt_clean.txt)"
     )
     args = parser.parse_args()

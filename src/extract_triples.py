@@ -21,11 +21,11 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-MODEL = "llama3.1:8b"
-INPUT_FILE = "excerpt_clean.txt"
-OUTPUT_FILE = "triples.json"
 
-# --------------------------------------------------------------------------------------------
+MODEL = "llama3.1:8b"
+INPUT_FILE = "data/excerpt_clean.txt"
+OUTPUT_FILE = "output/triples.json"
+
 SYSTEM_PROMPT = """You are an information extraction system.
 Extract entities and the relationships between them from the given text.
 
@@ -69,7 +69,7 @@ Example output:
   {"subject": "Tom", "relation": "earns", "object": "ten shillings a week"},
   {"subject": "Tom", "relation": "lived_in", "object": "Dover"}
 ]}"""
-# --------------------------------------------------------------------------------------------
+
 
 def extract(text: str) -> list:
     """Send the text to the model and return a list of triple dicts."""

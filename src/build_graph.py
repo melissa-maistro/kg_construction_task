@@ -15,8 +15,8 @@ import json
 import sys
 import networkx as nx
 
-INPUT_FILE = "triples_normalized.json"
-GRAPHML_FILE = "christmas_carol_stave_one_kg.graphml"
+INPUT_FILE = "output/triples.json"
+GRAPHML_FILE = "output/christmas_carol_stave_one_kg.graphml"
 
 
 def load_triples(path):

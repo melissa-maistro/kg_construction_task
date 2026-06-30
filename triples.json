@@ -1,0 +1,119 @@
+{
+  "triples": [
+    {
+      "subject": "Marley",
+      "relation": "has_state",
+      "object": "dead"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "partner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "executor_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "administrator_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "assign_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "residuary_legatee_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "friend_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "mourner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "lived_in",
+      "object": "chambers"
+    },
+    {
+      "subject": "chambers",
+      "relation": "formerly_belonged_to",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "employed",
+      "object": "clerk"
+    },
+    {
+      "subject": "clerk",
+      "relation": "earned",
+      "object": "fifteen shillings a week"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "visited",
+      "object": "Scrooge's office"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "represented",
+      "object": "Marley's liberality"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "refused_to_help",
+      "object": "poor and destitute"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "disliked",
+      "object": "Christmas"
+    },
+    {
+      "subject": "nephew",
+      "relation": "visited",
+      "object": "Scrooge's office"
+    },
+    {
+      "subject": "nephew",
+      "relation": "tried_to_cheer_up",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "appeared_to",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "was_bound_by",
+      "object": "chain made of cash-boxes, keys, padlocks, ledgers, deeds, and heavy purses wrought in steel"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "travelled",
+      "object": "on the wings of the wind"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "was_warned_by",
+      "object": "Marley's Ghost"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "will_be_haunted_by",
+      "object": "Three Spirits"
+    }
+  ]
+}

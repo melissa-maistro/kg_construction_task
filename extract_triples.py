@@ -96,6 +96,66 @@ Example output:
 ]}"""
 
 # --------------------------------------------------------------------------------------------
+SYSTEM_PROMPT3 = """You are an information extraction system building a knowledge graph.
+Extract entities and the durable relationships between them from the given text.
+
+Output format:
+- Return ONLY a JSON object with a single key "triples".
+- "triples" is a list of objects, each with "subject", "relation", "object".
+- Use short snake_case relations, for example: partner_of, executor_of,
+  nephew_of, employed_by, died, visited, has_state, located_in.
+
+What to extract (durable facts about entities):
+- Identity and kinship (who someone is, family ties).
+- Roles and employment (who works for whom).
+- Ownership and residence (who owns or lives where).
+- Significant events that define a character (death, a warning, a visit).
+- Stable traits or states central to a character.
+
+What to EXCLUDE (do not extract these):
+- Transient physical actions (walking, sitting, lighting a candle, eating).
+- Individual lines of dialogue or quotes. Summarize an exchange as one
+  relationship if it matters, but never put spoken sentences as the object.
+- Momentary observations or things a character merely looks at.
+- Scene description, weather, and background atmosphere.
+- Minor props and objects that play no role in the relationships.
+
+Rules:
+- Every triple must have a non-empty subject, relation, AND object.
+  Never use null, none, or true as an object.
+- If a fact is a state or property, express it as a relation to that state,
+  for example {"subject": "John", "relation": "has_state", "object": "dead"}.
+- Subjects and objects must be single entities (one person, place, or thing),
+  never sentences, clauses, or descriptive phrases.
+- If a fact is expressed as a phrase, break it into multiple triples that
+  connect single entities, introducing the intermediate entity as its own node.
+- Extract relationships for every named or described character, including minor
+  ones (employees, family, visitors), but only the durable facts above, not
+  their every action.
+- Use proper names where given. If a character is only described
+  (for example "the clerk"), use that description as the entity.
+- Extract only facts stated in the text. Do not invent or infer.
+- Ignore metaphors and figures of speech (for example "dead as a door-nail"
+  or "on the wings of the wind").
+
+Example text:
+"Old Hooper was dead. The shop passed to young Pip, who lived in rooms that
+had once belonged to Hooper. Pip's clerk, a man named Tom, earned ten
+shillings a week and lived in Dover. One morning Tom lit the fire, sat at his
+desk, and said 'Good day, sir.'"
+
+Example output:
+{"triples": [
+  {"subject": "Old Hooper", "relation": "has_state", "object": "dead"},
+  {"subject": "Pip", "relation": "inherited", "object": "shop"},
+  {"subject": "Pip", "relation": "lived_in", "object": "rooms"},
+  {"subject": "rooms", "relation": "formerly_belonged_to", "object": "Old Hooper"},
+  {"subject": "Tom", "relation": "employed_by", "object": "Pip"},
+  {"subject": "Tom", "relation": "earns", "object": "ten shillings a week"},
+  {"subject": "Tom", "relation": "lived_in", "object": "Dover"}
+]}"""
+
+# --------------------------------------------------------------------------------------------
 
 def extract(text: str) -> list:
     """Send the text to the model and return a list of triple dicts."""
@@ -106,7 +166,7 @@ def extract(text: str) -> list:
     for part in ollama.chat(
         model=MODEL,
         messages=[
-            {"role": "system", "content": SYSTEM_PROMPT2},
+            {"role": "system", "content": SYSTEM_PROMPT3},
             {"role": "user", "content": f'Text:\n"""{text}"""'},
         ],
         format="json",

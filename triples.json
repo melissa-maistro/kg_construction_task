@@ -53,67 +53,42 @@
     {
       "subject": "Scrooge",
       "relation": "employed",
-      "object": "clerk"
+      "object": "himself"
     },
     {
-      "subject": "clerk",
+      "subject": "Scrooge",
       "relation": "earned",
-      "object": "fifteen shillings a week"
+      "object": "enough"
+    },
+    {
+      "subject": "Scrooge's nephew",
+      "relation": "visited",
+      "object": "Scrooge"
     },
     {
       "subject": "gentlemen",
       "relation": "visited",
-      "object": "Scrooge's office"
+      "object": "Scrooge"
     },
     {
-      "subject": "gentlemen",
-      "relation": "represented",
-      "object": "Marley's liberality"
-    },
-    {
-      "subject": "Scrooge",
-      "relation": "refused_to_help",
-      "object": "poor and destitute"
-    },
-    {
-      "subject": "Scrooge",
-      "relation": "disliked",
-      "object": "Christmas"
-    },
-    {
-      "subject": "nephew",
+      "subject": "Marley's Ghost",
       "relation": "visited",
-      "object": "Scrooge's office"
-    },
-    {
-      "subject": "nephew",
-      "relation": "tried_to_cheer_up",
       "object": "Scrooge"
     },
     {
       "subject": "Marley's Ghost",
-      "relation": "appeared_to",
-      "object": "Scrooge"
+      "relation": "was",
+      "object": "partner_of_Scrogue"
     },
     {
       "subject": "Marley's Ghost",
-      "relation": "was_bound_by",
-      "object": "chain made of cash-boxes, keys, padlocks, ledgers, deeds, and heavy purses wrought in steel"
+      "relation": "wore_chain",
+      "object": "made_in_life"
     },
     {
       "subject": "Marley's Ghost",
       "relation": "travelled",
-      "object": "on the wings of the wind"
-    },
-    {
-      "subject": "Scrooge",
-      "relation": "was_warned_by",
-      "object": "Marley's Ghost"
-    },
-    {
-      "subject": "Scrooge",
-      "relation": "will_be_haunted_by",
-      "object": "Three Spirits"
+      "object": "on_wings_of_wind"
     }
   ]
 }

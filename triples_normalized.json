@@ -66,11 +66,6 @@
       "object": "Scrooge's office"
     },
     {
-      "subject": "gentlemen",
-      "relation": "represented",
-      "object": "Marley's liberality"
-    },
-    {
       "subject": "Scrooge",
       "relation": "refused_to_help",
       "object": "poor and destitute"
@@ -98,12 +93,37 @@
     {
       "subject": "Marley's Ghost",
       "relation": "was_bound_by",
-      "object": "chain made of cash-boxes, keys, padlocks, ledgers, deeds, and heavy purses wrought in steel"
+      "object": "chain"
     },
     {
-      "subject": "Marley's Ghost",
-      "relation": "travelled",
-      "object": "on the wings of the wind"
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "cash-boxes"
+    },
+    {
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "keys"
+    },
+    {
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "padlocks"
+    },
+    {
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "ledgers"
+    },
+    {
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "deeds"
+    },
+    {
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "purses"
     },
     {
       "subject": "Scrooge",

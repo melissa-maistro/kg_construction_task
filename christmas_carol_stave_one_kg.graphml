@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="edge" attr.name="relation" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="Marley" />
+    <node id="dead" />
+    <node id="Scrooge" />
+    <node id="chambers" />
+    <node id="clerk" />
+    <node id="fifteen shillings a week" />
+    <node id="gentlemen" />
+    <node id="Scrooge's office" />
+    <node id="poor and destitute" />
+    <node id="Christmas" />
+    <node id="nephew" />
+    <node id="Marley's Ghost" />
+    <node id="chain" />
+    <node id="cash-boxes" />
+    <node id="keys" />
+    <node id="padlocks" />
+    <node id="ledgers" />
+    <node id="deeds" />
+    <node id="purses" />
+    <node id="Three Spirits" />
+    <edge source="Marley" target="dead">
+      <data key="d0">has_state</data>
+    </edge>
+    <edge source="Scrooge" target="Marley">
+      <data key="d0">mourner_of</data>
+    </edge>
+    <edge source="Scrooge" target="chambers">
+      <data key="d0">lived_in</data>
+    </edge>
+    <edge source="Scrooge" target="clerk">
+      <data key="d0">employed</data>
+    </edge>
+    <edge source="Scrooge" target="poor and destitute">
+      <data key="d0">refused_to_help</data>
+    </edge>
+    <edge source="Scrooge" target="Christmas">
+      <data key="d0">disliked</data>
+    </edge>
+    <edge source="Scrooge" target="Marley's Ghost">
+      <data key="d0">was_warned_by</data>
+    </edge>
+    <edge source="Scrooge" target="Three Spirits">
+      <data key="d0">will_be_haunted_by</data>
+    </edge>
+    <edge source="chambers" target="Marley">
+      <data key="d0">formerly_belonged_to</data>
+    </edge>
+    <edge source="clerk" target="fifteen shillings a week">
+      <data key="d0">earned</data>
+    </edge>
+    <edge source="gentlemen" target="Scrooge's office">
+      <data key="d0">visited</data>
+    </edge>
+    <edge source="nephew" target="Scrooge's office">
+      <data key="d0">visited</data>
+    </edge>
+    <edge source="nephew" target="Scrooge">
+      <data key="d0">tried_to_cheer_up</data>
+    </edge>
+    <edge source="Marley's Ghost" target="Scrooge">
+      <data key="d0">appeared_to</data>
+    </edge>
+    <edge source="Marley's Ghost" target="chain">
+      <data key="d0">was_bound_by</data>
+    </edge>
+    <edge source="chain" target="cash-boxes">
+      <data key="d0">made_of</data>
+    </edge>
+    <edge source="chain" target="keys">
+      <data key="d0">made_of</data>
+    </edge>
+    <edge source="chain" target="padlocks">
+      <data key="d0">made_of</data>
+    </edge>
+    <edge source="chain" target="ledgers">
+      <data key="d0">made_of</data>
+    </edge>
+    <edge source="chain" target="deeds">
+      <data key="d0">made_of</data>
+    </edge>
+    <edge source="chain" target="purses">
+      <data key="d0">made_of</data>
+    </edge>
+  </graph>
+</graphml>

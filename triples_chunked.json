@@ -1,0 +1,954 @@
+{
+  "triples": [
+    {
+      "subject": "Marley",
+      "relation": "has_state",
+      "object": "dead"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "executor_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "administrator_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "assign_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "residuary_legatee_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "friend_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "mourner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "partner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge and Marley",
+      "relation": "firm_name",
+      "object": "null"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_property",
+      "object": "warehouse"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_characteristic",
+      "object": "tight-fisted"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_characteristic",
+      "object": "covetous"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_state",
+      "object": "cold"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_state",
+      "object": "dismal"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_state",
+      "object": "rich"
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "is_relative_of",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "visited",
+      "object": "counting-house of Scrooge"
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "spoke_to",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "said",
+      "object": "Merry Christmas, uncle! God save you!"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "responded",
+      "object": "Bah! Humbug!"
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "asked",
+      "object": "What right have you to be merry? What reason have you to be merry? You're poor enough."
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "responded",
+      "object": "I do. Merry Christmas! What right have you to be merry? What reason have you to be merry? You're poor enough."
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "said",
+      "object": "Come, then, what right have you to be dismal? What reason have you to be morose? You're rich enough."
+    },
+    {
+      "subject": "nephew of Scrooge",
+      "relation": "said",
+      "object": "Don't be cross, uncle! A Merry Christmas, uncle! God save you!"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "responded",
+      "object": "What else can I be, when I live in such a world of fools as this? Merry Christmas! Out upon merry Christmas! What's Christmas-time to you but a time for paying bills without money; a time for finding yourself a year older, and not an hour richer; a time for balancing your books, and having every item in 'em through a round dozen of months presented dead against you?"
+    },
+    {
+      "subject": "Christmas-time",
+      "relation": "is_good_time_for",
+      "object": "men and women"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_nephew",
+      "object": "nephew"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "was_angry_with",
+      "object": "clerk in the tank"
+    },
+    {
+      "subject": "clerk in the tank",
+      "relation": "made_sound",
+      "object": "applause"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "punished",
+      "object": "clerk in the tank"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "was_impressed_by",
+      "object": "nephew's speaking skills"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "suggested_nephew_should_join_parliament",
+      "object": "nephew"
+    },
+    {
+      "subject": "nephew",
+      "relation": "invited_scrooge_to_dine",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "declined_invitation",
+      "object": "dinner invitation from nephew"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked_nephew_about_marriage",
+      "object": "nephew"
+    },
+    {
+      "subject": "nephew",
+      "relation": "explained_reason_for_marriage",
+      "object": "love"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "disapproved_of_nephew's_marriage",
+      "object": "nephew's marriage"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked_nephew_to_be_friends",
+      "object": "nephew"
+    },
+    {
+      "subject": "clerk in the tank",
+      "relation": "returned_greetings",
+      "object": "nephew and Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "muttered_about_clerk",
+      "object": "clerk's conversation about Christmas"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "retired_to_bedlam",
+      "object": "Bedlam"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "visited_scrooge",
+      "object": "Scrooge's office"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "represented_firm_of_scrooge_and_marley",
+      "object": "Scrooge and Marley's firm"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "informed_gentlemen_about_marley's_death",
+      "object": "Marley's death"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "commended_scrooge's_liberality",
+      "object": "Scrooge and Marley's firm"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "proposed_charitable_donation",
+      "object": "poor and destitute"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked_about_prisons_and_workhouses",
+      "object": "prisons and workhouses"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "informed_scrooge_about_prisons_and_workhouses",
+      "object": "prisons and workhouses"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "Union workhouses"
+    },
+    {
+      "subject": "gentleman",
+      "relation": "answered",
+      "object": "still in operation"
+    },
+    {
+      "subject": "Treadmill",
+      "relation": "in_full_vigour",
+      "object": "true"
+    },
+    {
+      "subject": "Poor Law",
+      "relation": "in_full_vigour",
+      "object": "true"
+    },
+    {
+      "subject": "gentleman",
+      "relation": "trying_to_help",
+      "object": "poor people"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "supports",
+      "object": "Union workhouses"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "supports",
+      "object": "Treadmill"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "supports",
+      "object": "Poor Law"
+    },
+    {
+      "subject": "gentleman",
+      "relation": "trying_to_help",
+      "object": "poor people with food and drink"
+    },
+    {
+      "subject": "gentleman",
+      "relation": "trying_to_help",
+      "object": "poor people with warmth"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "does_not_make_merry",
+      "object": "Christmas"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "cannot_afford_to_help_others",
+      "object": "true"
+    },
+    {
+      "subject": "gentleman",
+      "relation": "criticized_Scrogue's_views",
+      "object": "true"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "does_not_care_about_gentleman's_criticism",
+      "object": "true"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "left",
+      "object": "true"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "resumed_work",
+      "object": "true"
+    },
+    {
+      "subject": "fog",
+      "relation": "became_intense",
+      "object": "true"
+    },
+    {
+      "subject": "people",
+      "relation": "ran_about_with_links",
+      "object": "true"
+    },
+    {
+      "subject": "labourers",
+      "relation": "repairing_gas_pipes",
+      "object": "main street"
+    },
+    {
+      "subject": "ragged men and boys",
+      "relation": "gathered_around_fire",
+      "object": "brazier"
+    },
+    {
+      "subject": "water-plug",
+      "relation": "congealed",
+      "object": "true"
+    },
+    {
+      "subject": "shops",
+      "relation": "became_splendid_joke",
+      "object": "true"
+    },
+    {
+      "subject": "Lord Mayor",
+      "relation": "gave_orders_to_cooks_and_butlers",
+      "object": "Christmas"
+    },
+    {
+      "subject": "little tailor",
+      "relation": "stirred_up_pudding",
+      "object": "tomorrow's pudding"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "seized_ruler",
+      "object": "true"
+    },
+    {
+      "subject": "singer",
+      "relation": "fled_in_terror",
+      "object": "true"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "regaled_by",
+      "object": "Christmas carol"
+    },
+    {
+      "subject": "singer",
+      "relation": "fled_from",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "shut_down_counting_house",
+      "object": "none"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "dismissed_clerk",
+      "object": "clerk"
+    },
+    {
+      "subject": "clerk",
+      "relation": "employed_by",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "paid_clerk",
+      "object": "day's wages for no work"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "disapproved_of_holiday_bonus",
+      "object": "clerk"
+    },
+    {
+      "subject": "clerk",
+      "relation": "promised_to_return_early",
+      "object": "next morning"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "walked_out",
+      "object": "none"
+    },
+    {
+      "subject": "office",
+      "relation": "closed_by",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "clerk",
+      "relation": "went_down_slide",
+      "object": "Cornhill"
+    },
+    {
+      "subject": "clerk",
+      "relation": "ran_home_to",
+      "object": "Camden Town"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "lived_in",
+      "object": "chambers"
+    },
+    {
+      "subject": "chambers",
+      "relation": "formerly_belonged_to",
+      "object": "Marley"
+    },
+    {
+      "subject": "building",
+      "relation": "located_in",
+      "object": "yard"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "resided_in",
+      "object": "building"
+    },
+    {
+      "subject": "yard",
+      "relation": "had_fog_and_frost",
+      "object": "none"
+    },
+    {
+      "subject": "knocker",
+      "relation": "appeared_as",
+      "object": "Marley's face"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_Marley's_face",
+      "object": "knocker"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "looked_at",
+      "object": "phenomenon"
+    },
+    {
+      "subject": "phenomenon",
+      "relation": "changed_into",
+      "object": "knocker"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "put_hand_on_key",
+      "object": "key"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "turned_key",
+      "object": "key"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "walked_in",
+      "object": "house"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "lit_candle",
+      "object": "candle"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "paused_before_shutting_door",
+      "object": "door"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "looked_behind_door",
+      "object": "hall"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_nothing",
+      "object": "Marley's pigtail"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "closed_door",
+      "object": "door"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "walked_across_hall",
+      "object": "hall"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "went_up_stairs",
+      "object": "stairs"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "trimmed_candle",
+      "object": "candle"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_locomotive_hearse",
+      "object": "hearse"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "walked_through_rooms",
+      "object": "rooms"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "checked_all_was_right",
+      "object": "all"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_nothing_under_table",
+      "object": "table"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_nothing_under_sofa",
+      "object": "sofa"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_small_fire",
+      "object": "fire"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_gruel",
+      "object": "gruel"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "put_on_dressing_gown",
+      "object": "dressing-gown"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "sat_down_before_fire",
+      "object": "fire"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "ate_gruel",
+      "object": "gruel"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_old_fire_guard",
+      "object": "old fire-guard"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_old_shoes",
+      "object": "shoes"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_fish_baskets",
+      "object": "fish baskets"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_washing-stand",
+      "object": "washing-stand"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_poker",
+      "object": "poker"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_old_tiles",
+      "object": "tiles"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw_Marley's_face",
+      "object": "Marley's face"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "said",
+      "object": "Humbug"
+    },
+    {
+      "subject": "bell",
+      "relation": "hung_in",
+      "object": "room"
+    },
+    {
+      "subject": "bell",
+      "relation": "communicated_with",
+      "object": "chamber"
+    },
+    {
+      "subject": "bells",
+      "relation": "rang_out",
+      "object": "loudly"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "remembered",
+      "object": "ghosts in haunted houses were described as dragging chains"
+    },
+    {
+      "subject": "cellar door",
+      "relation": "flew_open",
+      "object": "booming sound"
+    },
+    {
+      "subject": "noise",
+      "relation": "came_from",
+      "object": "floors below"
+    },
+    {
+      "subject": "noise",
+      "relation": "came_up_the_stairs",
+      "object": "Scrooge's door"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "passed_into_room",
+      "object": "before Scrooge's eyes"
+    },
+    {
+      "subject": "flame",
+      "relation": "leaped_up",
+      "object": "I know him! Marley's Ghost!"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "observed",
+      "object": "Marley in his pigtail, usual waistcoat, tights, and boots"
+    },
+    {
+      "subject": "chain",
+      "relation": "clapsed_about",
+      "object": "Marley's middle"
+    },
+    {
+      "subject": "chain",
+      "relation": "made_of",
+      "object": "cash-boxes, keys, padlocks, ledgers, deeds, and heavy purses wrought in steel"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "often_heard",
+      "object": "Marley had no bowels"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "had_no_bowels",
+      "object": "true"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "What do you want with me?"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "said_Much!",
+      "object": "no doubt about it"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "Who are you?"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "said_In_life_I_was_your_partner_Jacob_Marley",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "Can you\u2014can you sit down?"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "said_I_can",
+      "object": "true"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "observed",
+      "object": "You don't believe in me"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "asked_What_evidence_would_you_have_of_my_reality_beyond_that_of_your_own_senses?",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "has_state",
+      "object": "terrified"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "appeared_to",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "had_atmosphere",
+      "object": "infernal"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "tried_to_distract",
+      "object": "attention"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "used",
+      "object": "joke"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "spoke_to",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "reason_for_visiting"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "explained_reason",
+      "object": "punishment"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "wore_chain",
+      "object": "self-made"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "Jacob Marley's help"
+    },
+    {
+      "subject": "Marley",
+      "relation": "could_not_help",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "was_dead",
+      "object": "seven years"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "travelled",
+      "object": "whole time"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "experienced",
+      "object": "incessant torture of remorse"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "asked",
+      "object": "how fast Ghost travelled"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "travelled_fast",
+      "object": "on the wings of the wind"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "commented",
+      "object": "Ghost's travel speed"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "reacted_to_Scrogue's_comment",
+      "object": "clanked its chain"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "expressed_regret",
+      "object": "ages of incessant labour"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "explained_business",
+      "object": "mankind was my business"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "expressed_grief",
+      "object": "chain"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "asked_question",
+      "object": "why did I walk through crowds of fellow-beings with my eyes turned down"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "warned_Scrogue",
+      "object": "you have yet a chance and hope of escaping my fate"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "explained_penance",
+      "object": "sitting invisible beside Scrooge many days"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "informed_Scrogue_of_upcoming_visits",
+      "object": "Three Spirits"
+    },
+    {
+      "subject": "Ghost",
+      "relation": "explained_visitation_schedule",
+      "object": "first to-morrow, second on the next night, third on the next night when the last stroke of Twelve has ceased to vibrate"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw",
+      "object": "spectre"
+    },
+    {
+      "subject": "spectre",
+      "relation": "wore",
+      "object": "wrapper"
+    },
+    {
+      "subject": "spectre",
+      "relation": "bound",
+      "object": "head"
+    },
+    {
+      "subject": "spectre",
+      "relation": "had_chain",
+      "object": "chain"
+    },
+    {
+      "subject": "spectre",
+      "relation": "walked_backward_from",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "window",
+      "relation": "raised_itself",
+      "object": "spectre"
+    },
+    {
+      "subject": "spectre",
+      "relation": "beckoned",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "held_up_hand",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "became_sensible_of",
+      "object": "confused_noises"
+    },
+    {
+      "subject": "spectre",
+      "relation": "joined_in_mournful_dirge",
+      "object": "lamentation_and_regret"
+    },
+    {
+      "subject": "spectre",
+      "relation": "floated_out",
+      "object": "night"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "followed_to_window",
+      "object": "spectre"
+    },
+    {
+      "subject": "air",
+      "relation": "was_filled_with",
+      "object": "phantoms"
+    },
+    {
+      "subject": "phantoms",
+      "relation": "wore_chains",
+      "object": "chains"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "had_chain",
+      "object": "chain"
+    },
+    {
+      "subject": "old ghost in a white waistcoat",
+      "relation": "cried_piteously",
+      "object": "woman_with_infant"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "knew",
+      "object": "old ghost in a white waistcoat"
+    },
+    {
+      "subject": "spectre",
+      "relation": "had_lost_power",
+      "object": "forever"
+    }
+  ]
+}

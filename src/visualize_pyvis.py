@@ -11,7 +11,7 @@ labels do not overlap. Open the HTML in a browser, drag nodes apart if you want
 more separation, then screenshot for the report or show it live.
 
 Prerequisites:
-    pip install --index-url https://pypi.org/simple/ pyvis networkx
+    pip install pyvis networkx
 """
 
 import networkx as nx

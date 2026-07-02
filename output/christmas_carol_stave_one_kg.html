@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Marley", "label": "Marley", "shape": "dot", "size": 46, "title": "Marley (degree 9)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "dead", "label": "dead", "shape": "dot", "size": 14, "title": "dead (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Scrooge", "label": "Scrooge", "shape": "dot", "size": 70, "title": "Scrooge (degree 15)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "chambers", "label": "chambers", "shape": "dot", "size": 18, "title": "chambers (degree 2)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "clerk", "label": "clerk", "shape": "dot", "size": 18, "title": "clerk (degree 2)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "fifteen shillings a week", "label": "fifteen shillings a week", "shape": "dot", "size": 14, "title": "fifteen shillings a week (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "gentlemen", "label": "gentlemen", "shape": "dot", "size": 14, "title": "gentlemen (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Scrooge\u0027s office", "label": "Scrooge\u0027s office", "shape": "dot", "size": 18, "title": "Scrooge\u0027s office (degree 2)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "poor and destitute", "label": "poor and destitute", "shape": "dot", "size": 14, "title": "poor and destitute (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Christmas", "label": "Christmas", "shape": "dot", "size": 14, "title": "Christmas (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "nephew", "label": "nephew", "shape": "dot", "size": 18, "title": "nephew (degree 2)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Marley\u0027s Ghost", "label": "Marley\u0027s Ghost", "shape": "dot", "size": 22, "title": "Marley\u0027s Ghost (degree 3)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "chain", "label": "chain", "shape": "dot", "size": 38, "title": "chain (degree 7)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "cash-boxes", "label": "cash-boxes", "shape": "dot", "size": 14, "title": "cash-boxes (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "keys", "label": "keys", "shape": "dot", "size": 14, "title": "keys (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "padlocks", "label": "padlocks", "shape": "dot", "size": 14, "title": "padlocks (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "ledgers", "label": "ledgers", "shape": "dot", "size": 14, "title": "ledgers (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "deeds", "label": "deeds", "shape": "dot", "size": 14, "title": "deeds (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "purses", "label": "purses", "shape": "dot", "size": 14, "title": "purses (degree 1)"}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Three Spirits", "label": "Three Spirits", "shape": "dot", "size": 14, "title": "Three Spirits (degree 1)"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Marley", "label": "has_state", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "has_state", "to": "dead"}, {"arrows": "to", "from": "Scrooge", "label": "partner_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "partner_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "executor_of", "smooth": {"roundness": 0.15, "type": "curvedCCW"}, "title": "executor_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "administrator_of", "smooth": {"roundness": 0.28, "type": "curvedCW"}, "title": "administrator_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "assign_of", "smooth": {"roundness": 0.28, "type": "curvedCCW"}, "title": "assign_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "residuary_legatee_of", "smooth": {"roundness": 0.41000000000000003, "type": "curvedCW"}, "title": "residuary_legatee_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "friend_of", "smooth": {"roundness": 0.41000000000000003, "type": "curvedCCW"}, "title": "friend_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "mourner_of", "smooth": {"roundness": 0.54, "type": "curvedCW"}, "title": "mourner_of", "to": "Marley"}, {"arrows": "to", "from": "Scrooge", "label": "lived_in", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "lived_in", "to": "chambers"}, {"arrows": "to", "from": "Scrooge", "label": "employed", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "employed", "to": "clerk"}, {"arrows": "to", "from": "Scrooge", "label": "refused_to_help", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "refused_to_help", "to": "poor and destitute"}, {"arrows": "to", "from": "Scrooge", "label": "disliked", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "disliked", "to": "Christmas"}, {"arrows": "to", "from": "Scrooge", "label": "was_warned_by", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "was_warned_by", "to": "Marley\u0027s Ghost"}, {"arrows": "to", "from": "Scrooge", "label": "will_be_haunted_by", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "will_be_haunted_by", "to": "Three Spirits"}, {"arrows": "to", "from": "chambers", "label": "formerly_belonged_to", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "formerly_belonged_to", "to": "Marley"}, {"arrows": "to", "from": "clerk", "label": "earned", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "earned", "to": "fifteen shillings a week"}, {"arrows": "to", "from": "gentlemen", "label": "visited", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "visited", "to": "Scrooge\u0027s office"}, {"arrows": "to", "from": "nephew", "label": "visited", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "visited", "to": "Scrooge\u0027s office"}, {"arrows": "to", "from": "nephew", "label": "tried_to_cheer_up", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "tried_to_cheer_up", "to": "Scrooge"}, {"arrows": "to", "from": "Marley\u0027s Ghost", "label": "appeared_to", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "appeared_to", "to": "Scrooge"}, {"arrows": "to", "from": "Marley\u0027s Ghost", "label": "was_bound_by", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "was_bound_by", "to": "chain"}, {"arrows": "to", "from": "chain", "label": "made_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "made_of", "to": "cash-boxes"}, {"arrows": "to", "from": "chain", "label": "made_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "made_of", "to": "keys"}, {"arrows": "to", "from": "chain", "label": "made_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "made_of", "to": "padlocks"}, {"arrows": "to", "from": "chain", "label": "made_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "made_of", "to": "ledgers"}, {"arrows": "to", "from": "chain", "label": "made_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "made_of", "to": "deeds"}, {"arrows": "to", "from": "chain", "label": "made_of", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "made_of", "to": "purses"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -9000, "springLength": 180}, "minVelocity": 0.75}, "edges": {"color": {"color": "#888888"}, "arrows": {"to": {"enabled": true, "scaleFactor": 0.6}}}, "nodes": {"font": {"size": 14, "bold": true}, "color": {"background": "#f4a259", "border": "#d17a30"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

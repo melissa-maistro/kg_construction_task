@@ -1,0 +1,69 @@
+{
+  "triples": [
+    {
+      "subject": "Marley",
+      "relation": "dead",
+      "object": null
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "partner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "executor_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "administrator_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "assign_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "legatee_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "friend_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "mourner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "lived_in",
+      "object": "chambers that once belonged to Marley"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "visited",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "warned",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "appeared_to",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "saw",
+      "object": "Marley's face on the knocker"
+    }
+  ]
+}

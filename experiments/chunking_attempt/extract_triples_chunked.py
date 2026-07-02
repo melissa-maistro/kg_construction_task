@@ -18,7 +18,7 @@ import logging
 import sys
 
 import ollama
-from chunking_attempt.chunk_text import chunk_text   # reuses your standalone chunker
+from experiments.chunking_attempt.chunk_text import chunk_text   # reuses your standalone chunker
 
 MODEL = "llama3.1:8b"
 INPUT_FILE = "excerpt_clean.txt"

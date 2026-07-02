@@ -22,67 +22,85 @@
     <node id="deeds" />
     <node id="purses" />
     <node id="Three Spirits" />
-    <edge source="Marley" target="dead">
+    <edge source="Marley" target="dead" id="0">
       <data key="d0">has_state</data>
     </edge>
-    <edge source="Scrooge" target="Marley">
+    <edge source="Scrooge" target="Marley" id="0">
+      <data key="d0">partner_of</data>
+    </edge>
+    <edge source="Scrooge" target="Marley" id="1">
+      <data key="d0">executor_of</data>
+    </edge>
+    <edge source="Scrooge" target="Marley" id="2">
+      <data key="d0">administrator_of</data>
+    </edge>
+    <edge source="Scrooge" target="Marley" id="3">
+      <data key="d0">assign_of</data>
+    </edge>
+    <edge source="Scrooge" target="Marley" id="4">
+      <data key="d0">residuary_legatee_of</data>
+    </edge>
+    <edge source="Scrooge" target="Marley" id="5">
+      <data key="d0">friend_of</data>
+    </edge>
+    <edge source="Scrooge" target="Marley" id="6">
       <data key="d0">mourner_of</data>
     </edge>
-    <edge source="Scrooge" target="chambers">
+    <edge source="Scrooge" target="chambers" id="0">
       <data key="d0">lived_in</data>
     </edge>
-    <edge source="Scrooge" target="clerk">
+    <edge source="Scrooge" target="clerk" id="0">
       <data key="d0">employed</data>
     </edge>
-    <edge source="Scrooge" target="poor and destitute">
+    <edge source="Scrooge" target="poor and destitute" id="0">
       <data key="d0">refused_to_help</data>
     </edge>
-    <edge source="Scrooge" target="Christmas">
+    <edge source="Scrooge" target="Christmas" id="0">
       <data key="d0">disliked</data>
     </edge>
-    <edge source="Scrooge" target="Marley's Ghost">
+    <edge source="Scrooge" target="Marley's Ghost" id="0">
       <data key="d0">was_warned_by</data>
     </edge>
-    <edge source="Scrooge" target="Three Spirits">
+    <edge source="Scrooge" target="Three Spirits" id="0">
       <data key="d0">will_be_haunted_by</data>
     </edge>
-    <edge source="chambers" target="Marley">
+    <edge source="chambers" target="Marley" id="0">
       <data key="d0">formerly_belonged_to</data>
     </edge>
-    <edge source="clerk" target="fifteen shillings a week">
+    <edge source="clerk" target="fifteen shillings a week" id="0">
       <data key="d0">earned</data>
     </edge>
-    <edge source="gentlemen" target="Scrooge's office">
+    <edge source="gentlemen" target="Scrooge's office" id="0">
       <data key="d0">visited</data>
     </edge>
-    <edge source="nephew" target="Scrooge's office">
+    <edge source="nephew" target="Scrooge's office" id="0">
       <data key="d0">visited</data>
     </edge>
-    <edge source="nephew" target="Scrooge">
+    <edge source="nephew" target="Scrooge" id="0">
       <data key="d0">tried_to_cheer_up</data>
     </edge>
-    <edge source="Marley's Ghost" target="Scrooge">
+    <edge source="Marley's Ghost" target="Scrooge" id="0">
       <data key="d0">appeared_to</data>
     </edge>
-    <edge source="Marley's Ghost" target="chain">
+    <edge source="Marley's Ghost" target="chain" id="0">
       <data key="d0">was_bound_by</data>
     </edge>
-    <edge source="chain" target="cash-boxes">
+    <edge source="chain" target="cash-boxes" id="0">
       <data key="d0">made_of</data>
     </edge>
-    <edge source="chain" target="keys">
+    <edge source="chain" target="keys" id="0">
       <data key="d0">made_of</data>
     </edge>
-    <edge source="chain" target="padlocks">
+    <edge source="chain" target="padlocks" id="0">
       <data key="d0">made_of</data>
     </edge>
-    <edge source="chain" target="ledgers">
+    <edge source="chain" target="ledgers" id="0">
       <data key="d0">made_of</data>
     </edge>
-    <edge source="chain" target="deeds">
+    <edge source="chain" target="deeds" id="0">
       <data key="d0">made_of</data>
     </edge>
-    <edge source="chain" target="purses">
+    <edge source="chain" target="purses" id="0">
       <data key="d0">made_of</data>
     </edge>
   </graph>

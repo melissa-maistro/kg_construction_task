@@ -2,7 +2,6 @@
 build_graph.py
 
 Builds a knowledge graph from extracted triples and exports it as GraphML
-for visualization in Gephi.
 
 Reads triples.json with the shape {"triples": [{subject, relation, object}, ...]}.
 Produces christmas_carol_stave_one_kg.graphml and prints summary statistics.
@@ -30,8 +29,10 @@ def load_triples(path):
 
 
 def build_graph(triples):
-    """Build a directed graph. Each triple becomes an edge labelled by relation."""
-    g = nx.DiGraph()
+    """Build a directed multigraph. Each triple is a distinct edge, so multiple
+    relations between the same two entities (for example Scrooge partner_of,
+    executor_of, and friend_of Marley) are all preserved."""
+    g = nx.MultiDiGraph()
     for t in triples:
         g.add_edge(t["subject"], t["object"], relation=t["relation"])
     return g
@@ -54,7 +55,7 @@ def main():
     triples = load_triples(INPUT_FILE)
     g = build_graph(triples)
 
-    # Export GraphML for visualization in Gephi (a required deliverable format).
+    # Export GraphML
     nx.write_graphml(g, GRAPHML_FILE)
     print(f"Saved graph to {GRAPHML_FILE}")
 

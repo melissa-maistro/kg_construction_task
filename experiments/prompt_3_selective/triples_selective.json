@@ -1,0 +1,94 @@
+{
+  "triples": [
+    {
+      "subject": "Marley",
+      "relation": "has_state",
+      "object": "dead"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "partner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "executor_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "administrator_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "assign_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "residuary_legatee_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "friend_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "mourner_of",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "lived_in",
+      "object": "chambers"
+    },
+    {
+      "subject": "chambers",
+      "relation": "formerly_belonged_to",
+      "object": "Marley"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "employed",
+      "object": "himself"
+    },
+    {
+      "subject": "Scrooge",
+      "relation": "earned",
+      "object": "enough"
+    },
+    {
+      "subject": "Scrooge's nephew",
+      "relation": "visited",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "gentlemen",
+      "relation": "visited",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "visited",
+      "object": "Scrooge"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "was",
+      "object": "partner_of_Scrogue"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "wore_chain",
+      "object": "made_in_life"
+    },
+    {
+      "subject": "Marley's Ghost",
+      "relation": "travelled",
+      "object": "on_wings_of_wind"
+    }
+  ]
+}
